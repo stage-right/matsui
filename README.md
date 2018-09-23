@@ -11,13 +11,13 @@ Matsui is meant to be containerized replacement for ansible bins to ensure consi
 To use matsui to run a playbook:
 
 ```bash
-$ sudo docker run --rm -it -v $(pwd):/ansible/playbooks stageright/matsui site.yml
+$ docker run --rm -it -v $(pwd):/ansible/playbooks stageright/matsui site.yml
 ```
 
 You may want to mount volumes to capture artifacts like ssh keys:
 
 ```bash
-$ sudo docker run --rm -it -v $(pwd):/ansible/playbooks -v ~/.ssh:/root/.ssh stageright/matsui setup.yml
+$ docker run --rm -it -v $(pwd):/ansible/playbooks -v ~/.ssh:/root/.ssh stageright/matsui setup.yml
 ```
 
 ## Extending Matsui
