@@ -25,7 +25,7 @@ $ docker run --rm -it -v $(pwd):/ansible/playbooks -v ~/.ssh:/root/.ssh stagerig
 Matsui does not have libraries to interact with third party environments by default. If you need to extend matsui to work with for instance digital ocean, you need to create a new dockerfile:
 
 ```Dockerfile
-FROM stageright/matsui:1.0
+FROM stageright/matsui:1.0.0
 
 RUN pip install dopy
 ```
