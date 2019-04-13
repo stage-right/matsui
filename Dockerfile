@@ -38,3 +38,4 @@ ENV PATH /ansible/bin:$PATH
 ENV PYTHONPATH /ansible/lib
 
 ENTRYPOINT ["ansible-playbook"]
+CMD ["--help"]
